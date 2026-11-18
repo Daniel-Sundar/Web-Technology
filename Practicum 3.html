@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Job Application Form</title>
+</head>
+<body>
+	<h1>Job Application Form</h1>
+	<form action="#" method="post" enctype="multipart/form-data">
+		<label for="name">Full name:</label>
+		<input id="name" name="name" type="text" required minlength="2"><br><br>
+
+		<label for="email">Email:</label>
+		<input id="email" name="email" type="email" required><br><br>
+
+		<label for="password">Password:</label>
+		<input id="password" name="password" type="password" required minlength="8"><br><br>
+
+		<label for="experience">Years of experience:</label>
+		<input id="experience" name="experience" type="number" min="0" max="50" required><br><br>
+
+		<label for="start-date">Available start date:</label>
+		<input id="start-date" name="start-date" type="date" required><br><br>
+
+		<label style="display: block;">Employment type: <input name="employment-type" type="radio" value="full-time" required> Full-time</label>
+		<label style="display: block;"><input name="employment-type" type="radio" value="part-time"> Part-time</label>
+
+		<label style="display: block;">Skills: <input name="skills" type="checkbox" value="communication"> Communication</label>
+		<label style="display: block;"><input name="skills" type="checkbox" value="teamwork"> Teamwork</label>
+		<label style="display: block;"><input name="skills" type="checkbox" value="problem-solving"> Problem-solving</label>
+
+		<label for="department">Department:</label>
+		<input id="department" name="department" type="text" required><br><br>
+
+		<label for="cover-letter">Cover letter:</label><br>
+		<input id="cover-letter" name="cover-letter" type="text" required minlength="20"><br><br>
+
+		<label for="resume">Resume (PDF):</label>
+		<input id="resume" name="resume" type="file" accept=".pdf,application/pdf" required><br><br>
+
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+	</form>
+</body>
+</html>
