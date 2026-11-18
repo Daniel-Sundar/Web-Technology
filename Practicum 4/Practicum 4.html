@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+    <link href="/home/itsdaniels28/Web Tech/Practicum 4.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#f0f0f0">
+
+    <h2>Job Application Form</h2>
+    <p>Please fill out all fields below before submitting.</p>
+    <hr>
+
+    <form>
+        <h3>Personal Information</h3>
+        
+        Full Name: <br>
+        <input type="text" name="fullname" size="40"><br><br>
+
+        Email Address: <br>
+        <input type="email" name="email" size="40"><br><br>
+
+        Password: <br>
+        <input type="password" name="pwd"><br><br>
+
+        <h3>Professional Details</h3>
+
+        Department: <br>
+        <input type="text" name="dept"><br><br>
+
+        Years of Experience: <br>
+        <input type="number" name="experience"><br><br>
+
+        Employment Type: <br>
+        <input type="radio" name="emp_type" value="Full-time"> Full-time 
+        <input type="radio" name="emp_type" value="Part-time"> Part-time<br><br>
+
+        Skills: <br>
+        <input type="checkbox" name="skill1"> Communication 
+        <input type="checkbox" name="skill2"> Teamwork 
+        <input type="checkbox" name="skill3"> Problem-solving<br><br>
+
+        <h3>Attachments</h3>
+
+        Cover Letter: <br>
+        <textarea name="coverletter" rows="4" cols="40"></textarea><br><br>
+
+        Upload Resume: <br>
+        <input type="file" name="resume"><br><br>
+
+        <hr>
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Clear Form">
+    </form>
+
+</body>
+</html>
